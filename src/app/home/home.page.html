@@ -1,20 +1,38 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      Comics
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content >
+  <ion-row>
+    <ion-col style="text-align: center;" (click)="goTo(0)" >
+      <img src="../../assets/batman.jpg" alt="">
+      <h3>Batman Arkham City  Breaking Ground</h3>
+    </ion-col>
+    <ion-col style="text-align: center;" (click)="goTo(1)">
+      <img src="../../assets/carnage.jpg" alt="">
+      <h3>Carnage: Black,White & Blood</h3>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col style="text-align: center;" (click)="goTo(2)">
+      <img src="../../assets/comic.jpg" alt="">
+      <h3>Spiderman: Forum 31</h3>
+    </ion-col>
+    <ion-col style="text-align: center;" (click)="goTo(3)">
+      <img src="../../assets/invincible.jpg" alt="">
+      <h3>Invincible: 1 y 2</h3>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col style="text-align: center;" (click)="goTo(4)">
+      <img src="../../assets/timestorm.jpg" alt="">
+      <h3>Spiderman: Timestorm</h3>
+    </ion-col>
+    <ion-col style="text-align: center;">
+    </ion-col>
+  </ion-row>
 </ion-content>

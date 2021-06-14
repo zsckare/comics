@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{data.name}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row style="text-align: center;">
+
+    <ion-col size="6" offset="3">
+      <img src="{{data.image}}" style="width: 150px;">
+    </ion-col>
+
+  </ion-row>
+  <ion-row>
+    <ion-col size="6" offset="3" style="text-align: center;">
+      <ion-button style="text-align: center;" (click)="gotoPDF()">Leer</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+
+    <ion-col size="6" offset="3">
+      <p style="color:white">{{data.descripcion}}</p>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="6" offset="3">
+      <p>Comentarios</p>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="6" offset="3" style="text-align: center;">
+      <p>Agregar comentario:</p>
+      <textarea  style="width:150px"></textarea>
+      <ion-button>Enviar Comentario</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

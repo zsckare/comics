@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{data.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ngx-extended-pdf-viewer src="{{data.comic}}" backgroundColor="#ffffff" [height]="'90vh'" [useBrowserLocale]="true">
+  </ngx-extended-pdf-viewer>
+</ion-content>
