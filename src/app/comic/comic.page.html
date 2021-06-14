@@ -30,13 +30,14 @@
   <ion-row>
     <ion-col size="6" offset="3">
       <p>Comentarios</p>
+      <p style="font-size: 12px; color:white;"  *ngFor="let coment of comments">{{coment.contenido}}</p>
     </ion-col>
   </ion-row>
   <ion-row>
     <ion-col size="6" offset="3" style="text-align: center;">
       <p>Agregar comentario:</p>
-      <textarea  style="width:150px"></textarea>
-      <ion-button>Enviar Comentario</ion-button>
+      <textarea  style="width:150px" [(ngModel)]="content"  ></textarea>
+      <ion-button (click)="addComment()" >Enviar Comentario</ion-button>
     </ion-col>
   </ion-row>
 </ion-content>

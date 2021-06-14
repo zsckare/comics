@@ -7,13 +7,13 @@
 
   <ion-row>
     <ion-col style="text-align: center;">                      
-      <input type="text" placeholder="Correo Electronico" class="css-input">      
+      <input type="text" placeholder="Correo Electronico" class="css-input" [(ngModel)]="email" >      
     </ion-col>    
   </ion-row>
 
   <ion-row>
     <ion-col style="text-align: center;">
-      <input type="password"  placeholder="Contraseña"class="css-input">
+      <input type="password"  placeholder="Contraseña"class="css-input" [(ngModel)]="password" >
       
     </ion-col>    
   </ion-row>
@@ -23,7 +23,7 @@
       <ion-button style="margin-left: 45px;" [routerLink]="['/registro']" >Registarse</ion-button>
     </ion-col>    
     <ion-col style="text-align: center;">
-      <ion-button [routerLink]="['/home']" >Login</ion-button> 
+      <ion-button (click)="login()" >Login</ion-button> 
     </ion-col> 
   </ion-row>
 

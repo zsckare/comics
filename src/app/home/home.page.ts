@@ -34,7 +34,7 @@ export class HomePage {
       id:'4',
       name:'Invincible: 1 y 2',
       image:"../../assets/invincible.jpg",
-      comic:"/assets/Comics/invincible.pdf",
+      comic:"/assets/Comics/invencible.pdf",
       descripcion:'A la edad de 16 años, Mark comienza a desarrollar superpoderes y comienza a trabajar como superhéroe bajo la tutela de su padre.'
     },
     {
