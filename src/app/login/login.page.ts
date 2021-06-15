@@ -26,6 +26,9 @@ export class LoginPage implements OnInit {
     });
   }
   login(){
+    if(this.Data.length == 0){
+      this.presentToast()
+    }
     this.Data.forEach(element => {
       if(element.email == this.email){
         if(element.password == this.password){

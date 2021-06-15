@@ -144,4 +144,10 @@ export class DbService {
     user_id TEXT,
     comic_id INTEGER */
   }
+  deleteComment(id){
+    return this.storage.executeSql('DELETE FROM comentarios WHERE id = ?', [id])
+    .then(_ => {
+      this.getComentarios();
+    });
+  }
 }
